@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:ital,wght@0,300;0,400;1,300&family=Oswald:wght@300&family=Poltawski+Nowy&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto&display=swap');
+* {
+padding: 0 ; 
+margin : 0 ; 
+box-sizing : border-box ; 
+list-style:  none ;
+text-decoration : none ; 
+font-family : 'Poppins' ,sans-serif ; 
+}
+html{
+  min-height: 100%;
+  min-width: 100%;
+}
+body{
+
+    background:rgba(0, 0, 0, 0.466) url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+.sidebar { 
+width : 345px ; 
+position : fixed ; 
+left : 0 ; 
+top : 0 ; 
+height : 100% ; 
+background : rgb(11, 88, 11) ; 
+}
+.sidebar-brand {  
+height : 90px ; 
+font-size: .7rem;
+padding : 1rem 0rem 1rem 2rem ;
+margin-top: .6rem;
+margin-right: 2rem;
+color : rgb(255, 255, 255) ; 
+}
+.sidebar-brand span { 
+display : inline - block ;
+padding-right : 1em ; 
+text-align: center;
+}
+
+.sidebar-menu li { 
+width : 100% ; 
+border-bottom: 1px solid rgb(8, 70, 8);
+margin-bottom: 1.3rem ; 
+padding-left: 2rem ; 
+overflow: hidden;
+text-transform: capitalize;
+}
+
+.sidebar-menu a { 
+display : block ; 
+color : #ffffff ; 
+font-size : 1.2rem ; 
+}
+.sidebar-menu a:hover{
+    letter-spacing: 3px;
+    color:rgb(0, 0, 0);
+    transition: ease-in-out 0.15s;
+}
+#main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+  }
+#main.active {
+    width: calc(100% - 80px);
+    left: 0;
+  }
+  /*
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    margin-left:45px;
+  }
+  */
+.topbar {
+    width: 100%;
+    height: 60px;
+    display:-webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+.toggle {
+    position: relative;
+    width: 20px;
+    min-width: 40px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  .toggle.active{
+    left:0;
+  }/*
+  .sidebar{
+    display: none;
+  }
+  .sidebar-menu a{
+    display: block;
+  }
+  .toggle:hover .sidebar{
+    display: block;
+  }*/
+  .search {
+    position: relative;
+    width: 400px;
+    min-width: 90px;
+    margin-right: 200px;
+    margin-left: 50px;
+  }
+  
+  .search label {
+    position: relative;
+    width: 100%;
+  }
+  
+  .search label input {
+    width: 100%;
+    height: 40px;
+    min-width: 90px;
+    border-radius: 40px;
+    padding: 15px 20px;
+    padding-left: 35px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid black;
+  }
+  
+  .search label box-icon {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 1.2rem;
+    
+  }
+  
+  .user {
+    position: relative;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .user img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cardBox {
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .cardBox .card {
+    position: relative;
+    background:rgb(74, 153, 74);
+    padding: 30px;
+    border-radius: 20px;
+    display:inline-flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.466);
+  }
+  
+  .cardBox .card .numbers {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: rgb(255, 249, 249);
+    text-align: right;
+    
+  }
+  .numbers{
+    margin-left: 60px;
+  }
+  .cardBox .card .cardName {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 70px;
+  }
+  .cardBox .card .iconBx {
+    position: absolute;
+    font-size: 3.5rem;
+    color: rgb(0, 0, 0);
+  }
+
+
+  .cardBox .card:hover {
+    background: rgb(142, 235, 129);
+  }
+  .cardBox .card:hover .numbers,
+  .cardBox .card:hover .cardName,
+  .cardBox .card:hover .iconBx {
+    color: rgb(31, 92, 29);
+  }

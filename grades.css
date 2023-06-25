@@ -1,0 +1,61 @@
+body {
+    background-color: #f2f2f2;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .semester {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #096409;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color:#126e07;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px;
+    background-color: white;
+  }
+  
+  button {
+    margin-top: 10px;
+    margin-left: 700px;
+    padding: 8px 16px;
+    background-color: #126e07;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .semester {
+      display: block;
+      margin: 20px auto;
+      max-width: 300px;
+    }
+  }
